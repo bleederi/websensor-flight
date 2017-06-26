@@ -27,6 +27,17 @@ const GRAVITY = 9.81;
 var orientationMat = new Float64Array([0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]);     //device orientation
 var sensorfreq = 60;
 
+//Rendering vars (Three.JS)
+var scene = null;
+var sphere = null;
+var video = null;
+var videoF = null;
+var videoB = null;
+var videoTexture = null;
+var sphereMaterial = null;
+var sphereMesh = null;
+
+
 //Sensor classes and low-pass filter
 class AbsOriSensor {
         constructor() {
